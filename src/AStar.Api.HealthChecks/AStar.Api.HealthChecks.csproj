@@ -1,9 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	<Nullable>enable</Nullable>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<DocumentationFile>$(MSBuildProjectName).xml</DocumentationFile>
+	<IsPackable>true</IsPackable>
   </PropertyGroup>
 
 	<PropertyGroup>
@@ -24,7 +27,7 @@
 
 			Over time, additional methods will be added.
 		</Description>
-		<Version>0.1.0-alpha</Version>
+		<Version>0.2.0</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
