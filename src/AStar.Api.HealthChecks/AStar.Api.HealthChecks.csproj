@@ -27,7 +27,11 @@
 
 			Over time, additional methods will be added.
 		</Description>
-		<Version>0.2.0</Version>
+		<Version>0.2.1</Version>
+		<PackageIcon>AStar.png</PackageIcon>
+		<PackageTags>ASP.Core HealthChecks;HealthChecks</PackageTags>
+		<PackageReleaseNotes>This version only adds the NuGet icon.</PackageReleaseNotes>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -45,6 +49,10 @@
   </ItemGroup>
 
 	<ItemGroup>
+		<None Include="..\..\AStar.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 		<None Include="..\..\LICENSE">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
