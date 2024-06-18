@@ -5,15 +5,28 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0EEACFF2-9C8E-472A-AE89-F7FA54086704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Api.HealthChecks", "src\AStar.Api.HealthChecks\AStar.Api.HealthChecks.csproj", "{4CDA15BF-0614-46C9-91A9-E3FC35DB7107}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AStar.Api.HealthChecks", "src\AStar.Api.HealthChecks\AStar.Api.HealthChecks.csproj", "{4CDA15BF-0614-46C9-91A9-E3FC35DB7107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71A3013C-FA6D-4F92-A9F2-E724BC4675F4}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7030B8F5-61E5-45CB-87E3-A51591953805}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{749BDBCA-AFF5-4D96-BEF9-27E8AA9ED369}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4CDA15BF-0614-46C9-91A9-E3FC35DB7107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -21,7 +34,15 @@ Global
 		{4CDA15BF-0614-46C9-91A9-E3FC35DB7107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CDA15BF-0614-46C9-91A9-E3FC35DB7107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4CDA15BF-0614-46C9-91A9-E3FC35DB7107} = {0EEACFF2-9C8E-472A-AE89-F7FA54086704}
+		{7030B8F5-61E5-45CB-87E3-A51591953805} = {71A3013C-FA6D-4F92-A9F2-E724BC4675F4}
+		{749BDBCA-AFF5-4D96-BEF9-27E8AA9ED369} = {7030B8F5-61E5-45CB-87E3-A51591953805}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C5EBFF5-9E33-4722-A754-2ACB9E900004}
 	EndGlobalSection
 EndGlobal

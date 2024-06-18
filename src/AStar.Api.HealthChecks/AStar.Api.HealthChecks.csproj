@@ -29,6 +29,9 @@
 		</Description>
 		<Version>0.3.0</Version>
 		<PackageIcon>AStar.png</PackageIcon>
+		<PackageTags>ASP.Core HealthChecks;HealthChecks</PackageTags>
+		<PackageReleaseNotes>This version only adds the NuGet icon.</PackageReleaseNotes>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	</PropertyGroup>
 	
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
