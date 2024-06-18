@@ -4,30 +4,57 @@
         <name>AStar.Api.HealthChecks</name>
     </assembly>
     <members>
-        <member name="T:AStar.FilesApi.HealthChecks.HealthCheckExtensions">
+        <member name="T:AStar.Api.HealthChecks.HealthCheckExtensions">
             <summary>
-            The <see cref="T:AStar.FilesApi.HealthChecks.HealthCheckExtensions"/> class contains the relevant method(s) to configure the endpoints.
+            The <see cref="T:AStar.Api.HealthChecks.HealthCheckExtensions"/> class contains the relevant method(s) to configure the endpoints.
             </summary>
         </member>
-        <member name="M:AStar.FilesApi.HealthChecks.HealthCheckExtensions.ConfigureHealthCheckEndpoints(Microsoft.AspNetCore.Builder.WebApplication)">
+        <member name="M:AStar.Api.HealthChecks.HealthCheckExtensions.ConfigureHealthCheckEndpoints(Microsoft.AspNetCore.Builder.WebApplication)">
             <summary>
-            The <see cref="M:AStar.FilesApi.HealthChecks.HealthCheckExtensions.ConfigureHealthCheckEndpoints(Microsoft.AspNetCore.Builder.WebApplication)"/> method will add a basic health/live and health/ready endpoint.
+            The <see cref="M:AStar.Api.HealthChecks.HealthCheckExtensions.ConfigureHealthCheckEndpoints(Microsoft.AspNetCore.Builder.WebApplication)"/> method will add a basic health/live and health/ready endpoint.
             </summary>
             <param name="app">An instance of <see cref="T:Microsoft.AspNetCore.Builder.WebApplication"/> to configure.</param>
             <returns>The original <see cref="T:Microsoft.AspNetCore.Builder.WebApplication"/> to facilitate further method chaining.</returns>
         </member>
-        <member name="T:AStar.FilesApi.HealthChecks.HealthCheckResponses">
+        <member name="T:AStar.Api.HealthChecks.HealthCheckResponses">
             <summary>
-            The <see cref="T:AStar.FilesApi.HealthChecks.HealthCheckResponses"/> class contains the available extension methods for writing Health Checks. 
+            The <see cref="T:AStar.Api.HealthChecks.HealthCheckResponses"/> class contains the available extension methods for writing Health Checks.
             </summary>
         </member>
-        <member name="M:AStar.FilesApi.HealthChecks.HealthCheckResponses.WriteJsonResponse(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport)">
+        <member name="M:AStar.Api.HealthChecks.HealthCheckResponses.WriteJsonResponse(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport)">
             <summary>
-            The <see cref="M:AStar.FilesApi.HealthChecks.HealthCheckResponses.WriteJsonResponse(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport)"/> method will return the applicable HealthCheck data.
+            The <see cref="M:AStar.Api.HealthChecks.HealthCheckResponses.WriteJsonResponse(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport)"/> method will return the applicable HealthCheck data.
             </summary>
             <param name="context"></param>
             <param name="report"></param>
             <returns>The applicable HealthCheck data in JSON format.</returns>
+        </member>
+        <member name="T:AStar.Api.HealthChecks.HealthStatusResponse">
+            <summary>
+            The <see href="HealthStatusResponse"></see> class.
+            </summary>
+        </member>
+        <member name="P:AStar.Api.HealthChecks.HealthStatusResponse.Status">
+            <summary>
+            Gets or sets the Status for the Health Check.
+            </summary>
+        </member>
+        <member name="M:AStar.Api.HealthChecks.HealthStatusResponse.ToString">
+            <summary>
+            Returns this object in JSON format.
+            </summary>
+            <returns>This object serialized as a JSON object.</returns>
+        </member>
+        <member name="T:AStar.Api.HealthChecks.IApiClient">
+            <summary>
+            The <see href="IApiClient"></see> interface.
+            </summary>
+        </member>
+        <member name="M:AStar.Api.HealthChecks.IApiClient.GetHealthAsync">
+            <summary>
+            The GetHealthAsync method will return the basic Health Status of the API.
+            </summary>
+            <returns>An instance of the <see href="HealthStatusResponse"></see> class containing the text representation of the API Health Status.</returns>
         </member>
     </members>
 </doc>

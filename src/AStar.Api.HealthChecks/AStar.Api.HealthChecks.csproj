@@ -27,13 +27,13 @@
 
 			Over time, additional methods will be added.
 		</Description>
-		<Version>0.2.1</Version>
+		<Version>0.3.0</Version>
 		<PackageIcon>AStar.png</PackageIcon>
 		<PackageTags>ASP.Core HealthChecks;HealthChecks</PackageTags>
 		<PackageReleaseNotes>This version only adds the NuGet icon.</PackageReleaseNotes>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	</PropertyGroup>
-
+	
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
@@ -43,9 +43,8 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.4" />
-    <PackageReference Include="Microsoft.Extensions.Features" Version="8.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Features" Version="8.0.6" />
   </ItemGroup>
 
 	<ItemGroup>
