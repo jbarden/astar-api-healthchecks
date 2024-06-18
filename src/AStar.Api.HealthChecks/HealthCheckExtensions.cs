@@ -1,4 +1,4 @@
-namespace AStar.FilesApi.HealthChecks;
+namespace AStar.Api.HealthChecks;
 
 /// <summary>
 /// The <see cref="HealthCheckExtensions"/> class contains the relevant method(s) to configure the endpoints.
